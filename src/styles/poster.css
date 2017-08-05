@@ -1,0 +1,26 @@
+.wFPoster {
+  /* Full height */
+  height: 99.5vh;
+  width: auto;
+}
+
+.pName {
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 25%;
+  padding-left: 30%;
+  color: white;
+}
+
+.pDesignation {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 30%;
+  color: white;
+}
+
+.downArrow {
+  position: absolute;
+  bottom: 0;
+  padding-left: 45%;
+}
