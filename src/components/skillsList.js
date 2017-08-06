@@ -14,12 +14,17 @@ export default class SkillsList extends React.Component {
 		skillStar.forEach((item, index) => {
 			const starComp = [];
 			const skillTextComp = [];
+			let borderStarCount = 5-item;
 			while (item > 0) {
+				starComp.push(<Star color={black} style={MaterialUIStyles.star} key={item}/>);
 				item--;
-				starComp.push(<Star color={black} style={MaterialUIStyles.star} key={item}/>)
+			}
+			while (borderStarCount > 0) {
+				starComp.push(<StarBorder color={black} style={MaterialUIStyles.star} key={-borderStarCount}/>);
+				borderStarCount--;
 			}
 			skillTextComp.push(<span className="skill-text" key={skillText[index]}>{skillText[index]}</span>);
-			ratingComp.push(<li key={skillText[index]} className="skills-list-content">{skillTextComp} <span
+			ratingComp.push(<li key={skillText[index]} className="skills-list-content">{skillTextComp}<span
 				className="skill-star">{starComp}</span></li>)
 		});
 
