@@ -10,8 +10,8 @@
     "react-tap-event-plugin": "^2.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "yarn build",
+    "deploy": "rimraf docs && rename build docs",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -25,6 +25,6 @@
   "license": "MIT",
   "homepage": "https://ayu15.github.io/create-my-cv/",
   "devDependencies": {
-    "gh-pages": "^1.0.0"
+    "rimraf": "^2.6.1"
   }
 }
