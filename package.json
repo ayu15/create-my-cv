@@ -10,6 +10,8 @@
     "react-tap-event-plugin": "^2.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -21,5 +23,8 @@
   },
   "author": "Ayush Sharma",
   "license": "MIT",
-  "homepage": "https://github.com/ayu15/create-my-cv/blob/master/README.md"
+  "homepage": "https://ayu15.github.io/create-my-cv/",
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  }
 }
