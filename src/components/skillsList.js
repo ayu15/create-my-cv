@@ -1,19 +1,10 @@
 import React from 'react';
-import data from '../data/data.json'
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 import Star from 'material-ui/svg-icons/toggle/star';
 import { black } from 'material-ui/styles/colors';
-
-const iconStyles = {
-	"height": "15px",
-	"width": "15px"
-};
+import MaterialUIStyles from '../styles/materialUIStyles'
 
 export default class SkillsList extends React.Component {
-
-	constructor(props) {
-		super(props);
-	}
 
 	render() {
 		const skillText = Object.keys(this.props.list);
@@ -22,16 +13,19 @@ export default class SkillsList extends React.Component {
 		const ratingComp = [];
 		skillStar.forEach((item, index) => {
 			const starComp = [];
+			const skillTextComp = [];
 			while (item > 0) {
 				item--;
-				starComp.push(<Star color={black} style={iconStyles} className="skillStar" key={item}/>)
+				starComp.push(<Star color={black} style={MaterialUIStyles.star} key={item}/>)
 			}
-			ratingComp.push(<li key={skillText[index]}>{skillText[index]} {starComp} </li>)
-		})
+			skillTextComp.push(<span className="skill-text" key={skillText[index]}>{skillText[index]}</span>);
+			ratingComp.push(<li key={skillText[index]} className="skills-list-content">{skillTextComp} <span
+				className="skill-star">{starComp}</span></li>)
+		});
 
 		return (
-				<ul className="listContent">
-					{ratingComp}
-				</ul>);
+			<ul className="listContent">
+				{ratingComp}
+			</ul>);
 	}
 }

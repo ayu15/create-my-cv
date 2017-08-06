@@ -1,10 +1,12 @@
 import React from 'react';
-import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
+import { Card } from 'material-ui/Card';
 import IconPeople from 'material-ui/svg-icons/social/people';
 import IconExpandMore from 'material-ui/svg-icons/navigation/expand-more';
-import data from '../data/data.json'
+import data from '../data/data.json';
 import AppBar from 'material-ui/AppBar';
-import MaterialUIStyles from '../styles/materialUIStyles'
+import MaterialUIStyles from '../styles/materialUIStyles';
+import IconExpandLess from 'material-ui/svg-icons/navigation/expand-less';
+
 const experience = data.ayush123.experience;
 
 export default class Experience extends React.Component {
@@ -25,7 +27,7 @@ export default class Experience extends React.Component {
 		return (
 			<div className="wExperience">
 				<AppBar title="Experience" onClick={this.toggleCard}
-				        iconElementRight={<IconExpandMore onClick={this.toggleCard} style={MaterialUIStyles.icon}/>}
+				        iconElementRight={this.state.isHidden ? <IconExpandMore onClick={this.toggleCard} style={MaterialUIStyles.icon}/> : <IconExpandLess onClick={this.toggleCard} style={MaterialUIStyles.icon}/>}
 				        style={MaterialUIStyles.appBar} titleStyle={MaterialUIStyles.appBar}
 				        iconElementLeft={<IconPeople style={MaterialUIStyles.icon}/>}/>
 				{!this.state.isHidden && <Card style={MaterialUIStyles.card}>

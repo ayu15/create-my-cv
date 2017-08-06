@@ -4,7 +4,8 @@ export default {
 		"width": "32px"
 	},
 	appBar : {
-		"backgroundColor": "#F57C00",
+		"background": "linear-gradient(to left, #F57C00, #FF9800)",
+		// "backgroundColor": "#F57C00",
 		"color": "black"
 	},
 	card : {
@@ -15,5 +16,9 @@ export default {
 	arrowDown : {
 		"height": "10%",
 		"width": "10%"
+	},
+	star : {
+		"height": "15px",
+		"width": "15px"
 	}
 }

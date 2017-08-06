@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
+import { Card } from 'material-ui/Card';
 import ArrowDownward from 'material-ui/svg-icons/navigation/arrow-downward';
 import { black } from 'material-ui/styles/colors';
 import ReactDOM from 'react-dom';

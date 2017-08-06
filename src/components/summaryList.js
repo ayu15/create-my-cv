@@ -2,10 +2,6 @@ import React from 'react';
 
 export default class SummaryList extends React.Component {
 
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
 		const listItems = this.props.list.map((item, index) => {
 			return (
