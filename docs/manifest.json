@@ -14,9 +14,9 @@
       "density": "1.5"
     },
     {
-      "src": "\/batmanDarkKnight512x288.png",
-      "sizes": "512x288",
-      "type": "image\/png",
+      "src": "\/batmanDarkKnight512x512.jpg",
+      "sizes": "512x512",
+      "type": "image\/jpg",
       "density": "1.0"
     }
   ]
