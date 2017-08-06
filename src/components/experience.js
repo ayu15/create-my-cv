@@ -4,16 +4,8 @@ import IconPeople from 'material-ui/svg-icons/social/people';
 import IconExpandMore from 'material-ui/svg-icons/navigation/expand-more';
 import data from '../data/data.json'
 import AppBar from 'material-ui/AppBar';
-
+import MaterialUIStyles from '../styles/materialUIStyles'
 const experience = data.ayush123.experience;
-const iconStyles = {
-	"height": "32px",
-	"width": "32px"
-};
-const summaryStyles = {
-	"backgroundColor": "#94c5e9",
-	"color": "black"
-};
 
 export default class Experience extends React.Component {
 
@@ -33,9 +25,10 @@ export default class Experience extends React.Component {
 		return (
 			<div className="wExperience">
 				<AppBar title="Experience" onClick={this.toggleCard}
-				        iconElementRight={<IconExpandMore onClick={this.toggleCard} style={iconStyles}/>} style={summaryStyles} titleStyle={summaryStyles}
-				        iconElementLeft={<IconPeople style={iconStyles}/>}/>
-				{!this.state.isHidden && <Card style={summaryStyles}>
+				        iconElementRight={<IconExpandMore onClick={this.toggleCard} style={MaterialUIStyles.icon}/>}
+				        style={MaterialUIStyles.appBar} titleStyle={MaterialUIStyles.appBar}
+				        iconElementLeft={<IconPeople style={MaterialUIStyles.icon}/>}/>
+				{!this.state.isHidden && <Card style={MaterialUIStyles.card}>
 					<div className="listContent">
 						<p>{experience[0].name}, {experience[0].location}</p>
 						<p>{experience[0].position}</p>

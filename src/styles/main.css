@@ -47,14 +47,15 @@ body, html {
   .wSummary, .wSkills, .wEducation, .wExperience {
     border: 0.1rem solid;
     outline: none;
+    background-color: #FF9800;
   }
 
-  .pName {
-    padding-top: 15%;
-    padding-left: 40%;
-  }
+  /*.pName {*/
+    /*padding-top: 15%;*/
+    /*padding-left: 40%;*/
+  /*}*/
 
-  .pDesignation {
-    padding-left: 40%;
-  }
+  /*.pDesignation {*/
+    /*padding-left: 40%;*/
+  /*}*/
 }

@@ -5,15 +5,8 @@ import SkillsList from "./skillsList";
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 import IconBuild from 'material-ui/svg-icons/action/build';
 import IconExpandMore from 'material-ui/svg-icons/navigation/expand-more';
+import MaterialUIStyles from '../styles/materialUIStyles'
 
-const skillsStyles = {
-	"backgroundColor": "#94c5e9",
-	"color": "black"
-};
-const iconStyles = {
-	"height": "32px",
-	"width": "32px"
-};
 export default class Skills extends React.Component {
 
 	constructor(props) {
@@ -32,9 +25,10 @@ export default class Skills extends React.Component {
 		return (
 			<div className="wSkills">
 				<AppBar title="Skills" onClick={this.toggleCard}
-				        style={skillsStyles} titleStyle={skillsStyles} iconElementLeft={<IconBuild style={iconStyles}/>}
-				        iconElementRight={<IconExpandMore onClick={this.toggleCard} style={iconStyles} />}/>
-				{!this.state.isHidden && <Card style={skillsStyles}>
+				        style={MaterialUIStyles.appBar} titleStyle={MaterialUIStyles.appBar}
+				        iconElementLeft={<IconBuild style={MaterialUIStyles.icon}/>}
+				        iconElementRight={<IconExpandMore onClick={this.toggleCard} style={MaterialUIStyles.icon}/>}/>
+				{!this.state.isHidden && <Card style={MaterialUIStyles.card}>
 					<SkillsList list={data.ayush123.skills}/>
 				</Card>}
 			</div>);

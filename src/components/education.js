@@ -4,16 +4,9 @@ import IconSchool from 'material-ui/svg-icons/social/school';
 import IconExpandMore from 'material-ui/svg-icons/navigation/expand-more';
 import data from '../data/data.json'
 import AppBar from 'material-ui/AppBar';
+import MaterialUIStyles from '../styles/materialUIStyles'
 
 const education = data.ayush123.education;
-const iconStyles = {
-	"height": "32px",
-	"width": "32px"
-};
-const summaryStyles = {
-	"backgroundColor": "#94c5e9",
-	"color": "black"
-};
 
 export default class Education extends React.Component {
 
@@ -33,13 +26,14 @@ export default class Education extends React.Component {
 		return (
 			<div className="wEducation">
 				<AppBar title="Education" onClick={this.toggleCard}
-				        iconElementRight={<IconExpandMore onClick={this.toggleCard} style={iconStyles}/>} style={summaryStyles} titleStyle={summaryStyles}
-				        iconElementLeft={<IconSchool style={iconStyles}/>}/>
-				{!this.state.isHidden && <Card style={summaryStyles}>
+				        iconElementRight={<IconExpandMore onClick={this.toggleCard} style={MaterialUIStyles.icon}/>}
+				        style={MaterialUIStyles.appBar} titleStyle={MaterialUIStyles.appBar}
+				        iconElementLeft={<IconSchool style={MaterialUIStyles.icon}/>}/>
+				{!this.state.isHidden && <Card style={MaterialUIStyles.card}>
 					<div className="listContent">
-					<p>graduated from {education.graduation.college}</p>
-					<p>during {education.graduation.year} </p>
-					<p>with {education.graduation.GPA} GPA</p>
+						<p>graduated from {education.graduation.college}</p>
+						<p>during {education.graduation.year} </p>
+						<p>with {education.graduation.GPA} GPA</p>
 					</div>
 				</Card>}
 			</div>);

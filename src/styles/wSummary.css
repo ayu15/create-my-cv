@@ -1,6 +1,7 @@
 @media (max-width: 480px) {
   .wSummary, .wSkills .wEducation, .wExperience{
     outline: 0.2rem solid;
+    background-color: #FF9800;
   }
 }
 

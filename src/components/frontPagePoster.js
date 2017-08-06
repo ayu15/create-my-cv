@@ -1,16 +1,10 @@
 import React from 'react';
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 import ArrowDownward from 'material-ui/svg-icons/navigation/arrow-downward';
-import { white } from 'material-ui/styles/colors';
+import { black } from 'material-ui/styles/colors';
 import ReactDOM from 'react-dom';
+import MaterialUIStyles from '../styles/materialUIStyles'
 
-const iconStyles = {
-	"height": "10%",
-	"width": "10%"
-};
-const posterCard = {
-	"background-color": "orange"
-};
 export default class FrontPagePoster extends React.Component {
 
 	constructor(props) {
@@ -31,7 +25,7 @@ export default class FrontPagePoster extends React.Component {
 	}
 
 	handleScroll() {
-		if (this.state.firstScroll && this.state.arrowVisible) {
+		if (this.state.firstScroll && this.state.arrowVisible && document.body.clientWidth > 720) {
 			this.setState({
 				arrowVisible: false,
 				firstScroll: false
@@ -46,10 +40,13 @@ export default class FrontPagePoster extends React.Component {
 
 	render() {
 		return (
-			<Card className="wFPoster" ref={(ref) => this.myFPosterCard = ref} style={posterCard}>
-				<h1 className="pName">Hi, I'm Ayush Sharma</h1>
-				<h2 className="pDesignation">Front-end web developer</h2>
-				{this.state.arrowVisible && <ArrowDownward color={white} style={iconStyles} className="downArrow"/>}
+			<Card className="wFPoster" ref={(ref) => this.myFPosterCard = ref} style={MaterialUIStyles.card}>
+				<div className="poster-text-wrapper">
+					<div className="pName">Hi, I'm Ayush Sharma</div>
+					<div className="pDesignation">Front-end web developer</div>
+					{this.state.arrowVisible &&
+					<ArrowDownward color={black} style={MaterialUIStyles.arrowDown} className="downArrow"/>}
+				</div>
 			</Card>
 		)
 	}
