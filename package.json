@@ -12,8 +12,11 @@
   "scripts": {
     "predeploy": "yarn build",
     "deploy": "rimraf docs && rename build docs",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "yarn build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -25,6 +28,8 @@
   "license": "MIT",
   "homepage": "https://ayu15.github.io/create-my-cv/",
   "devDependencies": {
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1"
   }
 }

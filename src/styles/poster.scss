@@ -2,17 +2,18 @@
   /* Full height */
   height: 99.5vh;
   width: auto;
-  /*background-color: #FF9800;*/ }
-
-.poster-text-wrapper {
+  /*background-color: #FF9800;*/
+}
+.poster-text-wrapper{
   display: grid;
   grid-template-columns: 2fr 6fr 2fr;
-  grid-template-rows: 15vh 35vh 5vh 30vh 15vh; }
-
+  grid-template-rows: 15vh 35vh 5vh 30vh 15vh;
+}
 @media (min-width: 550px) {
   .poster-text-wrapper {
-    grid-template-rows: 30vh 15vh 1vh 24vh 30vh; } }
-
+    grid-template-rows: 30vh 15vh 1vh 24vh 30vh;
+  }
+}
 .pName {
   margin-top: 0;
   margin-left: 0;
@@ -20,7 +21,8 @@
   grid-column: 2/3;
   grid-row: 2/3;
   font-size: 3rem;
-  text-align: center; }
+  text-align: center;
+}
 
 .pDesignation {
   margin-top: 0;
@@ -29,9 +31,11 @@
   grid-column: 2/3;
   grid-row: 4/5;
   font-size: 2rem;
-  text-align: center; }
+  text-align: center;
+}
 
 .downArrow {
   position: absolute;
   bottom: 0;
-  padding-left: 45%; }
+  padding-left: 45%;
+}

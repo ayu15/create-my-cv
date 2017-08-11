@@ -33,6 +33,15 @@
         "year": "December 2016 - Present",
         "location": "London"
       }
-    ]
+    ],
+     "SocialLinks": {
+      "github": 123,
+      "linkedIn": 123,
+      "twitter": 123,
+      "stack overflow": 123,
+      "quora": 123,
+      "facebook": 123,
+      "gmail": 123
+    }
   }
 }
