@@ -1,12 +1,22 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: auto;
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/Roboto-Medium.ttf') format('truetype');
+  src: url('./assets/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .mainContainer {
-    height: 100%;
-
 }
 
 @media (min-width: 480px) {
