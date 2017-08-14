@@ -1,4 +1,11 @@
 import React from 'react';
+import SkewColumn from './skewColumn';
+import Summary from './summary';
+import IconDescription from 'material-ui/svg-icons/action/description';
+import MyStyles from '../styles/materialUIStyles';
+import IconBuild from 'material-ui/svg-icons/action/build';
+import Skills from './skills';
+import Divider from 'material-ui/Divider';
 
 export default class Page2 extends React.Component {
 
@@ -13,21 +20,18 @@ export default class Page2 extends React.Component {
 	}
 
 	render() {
+		const leftContent = <div>
+			<div className="skw-page__heading"><IconDescription style={MyStyles.icon}/>Summary</div>
+			<Divider style={MyStyles.divider}/>
+			<Summary/></div>;
+		const rightContent = <div>
+			<div className="skw-page__heading"><IconBuild style={MyStyles.icon}/>Tech stack</div>
+			<Divider style={MyStyles.divider}/>
+			<Skills/></div>;
 		return (
 			<div className={`skw-page skw-page-2 ${this.isActive()}`}>
-				<div className="skw-page__half skw-page__half--left">
-					<div className="skw-page__skewed">
-						<div className="skw-page__content">
-							<h2 className="skw-page__heading">Page 2</h2>
-							<p className="skw-page__description">Nothing to do here, continue scrolling.</p>
-						</div>
-					</div>
-				</div>
-				<div className="skw-page__half skw-page__half--right">
-					<div className="skw-page__skewed">
-						<div className="skw-page__content"></div>
-					</div>
-				</div>
+				<SkewColumn side='left' content={leftContent}/>
+				<SkewColumn side='right' content={rightContent}/>
 			</div>
 		)
 	}

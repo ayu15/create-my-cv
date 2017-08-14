@@ -1,4 +1,8 @@
 import React from 'react';
+import SkewColumn from './skewColumn';
+import Skills from './skills';
+import MyStyles from '../styles/materialUIStyles';
+import IconBuild from 'material-ui/svg-icons/action/build';
 
 export default class Page3 extends React.Component {
 
@@ -8,26 +12,19 @@ export default class Page3 extends React.Component {
 		this.isActive = this.isActive.bind(this);
 	}
 
-	isActive(){
-		return ((3===this.props.active) ?'active':'inactive');
+	isActive() {
+		return ((3 === this.props.active) ? 'active' : 'inactive');
 	}
 
 	render() {
+		const leftContent = <div><div className="skw-page__heading"><IconBuild style={MyStyles.icon}/>Tech Stack</div><Skills/></div>;
+
+		const rightContent = <Skills/>;
+
 		return (
 			<div className={`skw-page skw-page-3 ${this.isActive()}`}>
-				<div className="skw-page__half skw-page__half--left">
-					<div className="skw-page__skewed">
-						<div className="skw-page__content"></div>
-					</div>
-				</div>
-				<div className="skw-page__half skw-page__half--right">
-					<div className="skw-page__skewed">
-						<div className="skw-page__content">
-							<h2 className="skw-page__heading">Page 3</h2>
-							<p className="skw-page__description">The end is near, I promise!</p>
-						</div>
-					</div>
-				</div>
+				<SkewColumn side='left' content={leftContent}/>
+				<SkewColumn side='right' content={rightContent}/>
 			</div>
 		)
 	}

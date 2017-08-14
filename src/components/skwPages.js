@@ -2,6 +2,9 @@ import React from 'react';
 import  Page1 from './page1';
 import  Page2 from './page2';
 import  Page3 from './page3';
+import IconExpandMore from 'material-ui/svg-icons/navigation/expand-more';
+import IconExpandLess from 'material-ui/svg-icons/navigation/expand-less';
+import MyStyles from '../styles/materialUIStyles';
 
 export default class SkwPages extends React.Component {
 
@@ -40,18 +43,18 @@ export default class SkwPages extends React.Component {
 	};
 
 	componentDidMount() {
-		window.addEventListener('keydown', this.handleArrowScroll);
+		document.addEventListener('keydown', this.handleArrowScroll, {passive: true});
 	}
 
 	componentWillUnmount() {
-		window.removeEventListener('keydown', this.handleArrowScroll);
+		document.removeEventListener('keydown', this.handleArrowScroll, {passive: true});
 	}
 
 	handleArrowScroll(e) {
 		if (this.state.scrolling) return;
-		if (e.keyCode  === 38) {
+		if (e.keyCode === 38) {
 			this.navigateUp();
-		} else if (e.keyCode  === 40) {
+		} else if (e.keyCode === 40) {
 			this.navigateDown();
 		}
 	}
@@ -68,6 +71,9 @@ export default class SkwPages extends React.Component {
 	render() {
 		return (
 			<div className="skw-pages" onWheel={this.handleScroll}>
+				{this.state.curPage !== this.state.numOfPages ?
+					<IconExpandMore className="ca3-scroll-down-svg" style={MyStyles.downArrow}/> : null}
+				{this.state.curPage !== 1 ? <IconExpandLess className="ca3-scroll-up-svg" style={MyStyles.upArrow}/> : null}
 				<Page1 active={this.state.curPage}/>
 				<Page2 active={this.state.curPage}/>
 				<Page3 active={this.state.curPage}/>

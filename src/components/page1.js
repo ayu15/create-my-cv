@@ -21,13 +21,14 @@ export default class Page1 extends React.Component {
 		/>;
 
 		const rightContent = <div><h2 className="skw-page__heading">Ayush Sharma</h2>
-			<Divider/>
+			<Divider style={MyStyles.divider}/>
 			<p className="skw-page__description">Front-end developer</p></div>;
 
 		return (
 			<div className={`skw-page skw-page-1 ${this.isActive()}`}>
 				<SkewColumn side='left' content={leftContent}/>
 				<SkewColumn side='right' content={rightContent}/>
+				{/*<svg className="ca3-scroll-down-svg ca3-scroll-down-arrow"></svg>*/}
 			</div>
 		)
 	}

@@ -1,17 +1,22 @@
 {
   "ayush123": {
     "summary": [
-      "Currently working at Infosys Ltd. as Front-end web developer.",
-      "Aspiring a career as tech architecture.",
-      "cloud is next on my learning list.",
-      "Always abreast with latest web technologies, JavaScript frameworks, new tools and news from all round the world in magazines, blogs, github.",
-      "Consistent learner as always indulged in online/offline courses and implementing that in real world apps and pushing them on my github repositories."
+      "Currently and from last 3 years, I am working at Infosys Ltd. as Front-end web developer.",
+      "Long term aspiration is a career as tech architecture.",
+      "Creating clean and aesthetic UI with pleasing UX is my primary job.",
+      "Delivering apps with high performance, user friendly, multi platform compatible.",
+      "Staying updated with latest tech trends via blogs, courses, conferences and incorporating best practices."
     ],
     "emailID": "ayush15may@gmail.com",
-    "skills": {
+    "techStack": {
       "Angular": 4,
-      "React": 3,
-      "Javascript": 4
+      "React": 4,
+      "Javascript": 4,
+      "CSS": 3,
+      "Git": 4,
+      "Webpack": 4,
+      "Node js": 2,
+      "Material-design": 4
     },
     "education": {
       "graduation": {
