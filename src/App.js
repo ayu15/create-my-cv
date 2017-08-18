@@ -9,6 +9,10 @@ class App extends Component {
 		super();
 	}
 
+	componentDidMount() {
+		document.querySelectorAll("div.loader")[0].setAttribute("style", "display : none");
+	}
+
 	render() {
 		return (
 			<MuiThemeProvider>

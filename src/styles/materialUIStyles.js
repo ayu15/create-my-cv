@@ -11,14 +11,12 @@ export default {
 		width: '8.5rem'
 	},
 	downArrow: {
-		display: 'none',
 		height: '3.5rem',
 		width: '4rem',
 		color: '#000',
 		top: '93.5vh'
 	},
 	upArrow: {
-		display: 'none',
 		height: '3.5rem',
 		width: '4rem',
 		color: '#000',
