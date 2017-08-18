@@ -20,11 +20,11 @@ export default class Page2 extends React.Component {
 	}
 
 	render() {
-		const leftContent = <div>
+		const leftContent = <div className='cnt'>
 			<div className="skw-page__heading"><IconDescription style={MyStyles.icon}/>Summary</div>
 			<Divider style={MyStyles.divider}/>
 			<Summary/></div>;
-		const rightContent = <div>
+		const rightContent = <div className='cnt'>
 			<div className="skw-page__heading"><IconBuild style={MyStyles.icon}/>Tech stack</div>
 			<Divider style={MyStyles.divider}/>
 			<Skills/></div>;

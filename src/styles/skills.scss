@@ -1,34 +1,42 @@
-.skl-list-cnt{
+.skl-list-cnt {
   display: grid;
   grid-template-columns: 1fr 6rem 1rem 8rem 2fr;
 }
 
-.skl-star{
+.skl-star {
   grid-column: 4/5;
 }
 
-.skl-txt{
+.skl-txt {
   grid-column: 2/3;
   text-align: right;
 }
 
-.list-cnt{
+.list-cnt {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
-.wSmr{
+.wSmr {
   display: grid;
   grid-template-columns: 2rem 1fr 2rem;
+  text-align: justify;
 }
 
-.smr-list{
+.smr-list {
   grid-column: 2/3;
   line-height: 130%;
 }
 
-.smr-list-item{
+.smr-list-item {
   padding-top: 0.4rem;
 }
+
+@media (min-width: 480px) {
+  .wSmr {
+    display: grid;
+    grid-template-columns: 1rem 1fr 0.5rem;
+  }
+}  

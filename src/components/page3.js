@@ -17,9 +17,11 @@ export default class Page3 extends React.Component {
 	}
 
 	render() {
-		const leftContent = <div><div className="skw-page__heading"><IconBuild style={MyStyles.icon}/>Tech Stack</div><Skills/></div>;
+		const leftContent = <div className='cnt'>
+			<div className="skw-page__heading"><IconBuild style={MyStyles.icon}/>Tech Stack</div>
+			<Skills/></div>;
 
-		const rightContent = <Skills/>;
+		const rightContent = <div className='cnt'><Skills/></div>;
 
 		return (
 			<div className={`skw-page skw-page-3 ${this.isActive()}`}>

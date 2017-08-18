@@ -7,9 +7,18 @@ $scrollTime: 1s;
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .ca3-scroll-down-svg {
+    display: none !important;
+  }
+  .ca3-scroll-up-svg {
+    display: none !important;
+  }
+}
+
 .skw-page {
   &__skewed {
-    height:100%;
+    height: 100%;
   }
   &__content {
     display: flex;
@@ -81,22 +90,24 @@ $scrollTime: 1s;
     left: 0;
     top: 0;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     &__half {
       position: absolute;
       top: 0;
-      width: 50%;
+      width: 100%;
       height: 100vh;
       z-index: -1;
       transition: transform $scrollTime;
 
       &--left {
-        left: 0;
+        grid-column: 1/2;
         transform: translate3d(-$magicVH, 100%, 0);
       }
 
       &--right {
-        left: 50%;
+        grid-column: 2/3;
         transform: translate3d($magicVH, -100%, 0);
       }
 
@@ -123,16 +134,19 @@ $scrollTime: 1s;
     }
 
     &__content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-flow: column wrap;
-      position: absolute;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // flex-flow: column wrap;
+      // position: absolute;
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
-      padding: 0 25%;
+      // padding: 0 25%;
       color: #000;
       transform: skewX($skewDeg);
       transition: transform $scrollTime, opacity $scrollTime;
@@ -140,13 +154,13 @@ $scrollTime: 1s;
       font-weight: 600;
 
       .skw-page__half--left & {
-        padding-left: 25%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
         transform-origin: 100% 0;
       }
       .skw-page__half--right & {
-        padding-left: 25%;
-        padding-right: 25%;
+        padding-left: 10%;
+        padding-right: 10%;
         transform-origin: 0 100%;
       }
 
@@ -200,5 +214,17 @@ $scrollTime: 1s;
         background-color: #f39c12;
       }
     }
+  }
+
+  .cnt {
+    grid-column: 2/3;
+    text-align: center;
+  }
+
+  .ca3-scroll-down-svg {
+    display: inline-block !important;
+  }
+  .ca3-scroll-up-svg {
+    display: inline-block !important;
   }
 }

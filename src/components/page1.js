@@ -17,9 +17,9 @@ export default class Page1 extends React.Component {
 	}
 
 	render() {
-		const leftContent = <Avatar src={avatarPic} style={MyStyles.avatarPic}/>;
+		const leftContent = <div className='cnt'><Avatar src={avatarPic} style={MyStyles.avatarPic}/></div>;
 
-		const rightContent = <div><h2 className="skw-page__heading">Ayush Sharma</h2>
+		const rightContent = <div className='cnt'><h2 className="skw-page__heading">Ayush Sharma</h2>
 			<Divider style={MyStyles.divider}/>
 			<p className="skw-page__description">Front-end developer</p></div>;
 
