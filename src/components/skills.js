@@ -12,7 +12,7 @@ export default class Skills extends React.Component {
 
 	render() {
 		return (
-			<div className="wSkills">
+			<div className="wSkl">
 					<SkillsList list={data.ayush123.techStack}/>
 			</div>);
 	}

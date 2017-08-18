@@ -23,13 +23,13 @@ export default class SkillsList extends React.Component {
 				starComp.push(<StarBorder color={black} style={MaterialUIStyles.star} key={-borderStarCount}/>);
 				borderStarCount--;
 			}
-			skillTextComp.push(<span className="skill-text" key={skillText[index]}>{skillText[index]}</span>);
-			ratingComp.push(<li key={skillText[index]} className="skills-list-content">{skillTextComp}<span
-				className="skill-star">{starComp}</span></li>)
+			skillTextComp.push(<span className="skl-txt" key={skillText[index]}>{skillText[index]}</span>);
+			ratingComp.push(<li key={skillText[index]} className="skl-list-cnt">{skillTextComp}<span
+				className="skl-star">{starComp}</span></li>)
 		});
 
 		return (
-			<ul className="listContent">
+			<ul className="list-cnt">
 				{ratingComp}
 			</ul>);
 	}

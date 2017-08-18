@@ -15,7 +15,7 @@ export default class Summary extends React.Component {
 
 	render() {
 		return (
-			<div className="wSummary">
+			<div className="wSmr">
 					<SummaryList list={summary.ayush123.summary}/>
 			</div>);
 	}

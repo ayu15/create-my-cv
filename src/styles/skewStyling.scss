@@ -1,91 +1,27 @@
-.skw-pages {
-  overflow: hidden;
-  position: relative;
-  height: 100vh;
-}
-
 $skewDeg: 10deg;
 $magicVH: 18vh; // this number is magic and depends on skew angle
 $scrollTime: 1s;
 
+.skw-pages {
+  overflow-y: auto;
+  position: relative;
+}
+
 .skw-page {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-
-  &__half {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    height: 100vh;
-    z-index: -1;
-    transition: transform $scrollTime;
-
-    &--left {
-      left: 0;
-      transform: translate3d(-$magicVH, 100%, 0);
-    }
-
-    &--right {
-      left: 50%;
-      transform: translate3d($magicVH, -100%, 0);
-    }
-
-    .skw-page.active & {
-      transform: translate3d(0,0,0);
-    }
-  }
-
   &__skewed {
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 140%;
-    height: 100%;
-    transform: skewX($skewDeg * -1);
-    background: #fff;
-
-    .skw-page__half--left & {
-      left: -40%;
-    }
-    .skw-page__half--right & {
-      right: -40%;
-    }
+    height:100%;
   }
-
   &__content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
-    position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
     height: 100%;
-    padding: 0 25%;
-    color: #000;
-    transform: skewX($skewDeg);
-    transition: transform $scrollTime, opacity $scrollTime;
-    background-size: cover;
+    width: 100%;
+    text-align: justify;
     font-weight: 600;
-
-    .skw-page__half--left & {
-      padding-left: 25%;
-      padding-right: 20%;
-      transform-origin: 100% 0;
-    }
-    .skw-page__half--right & {
-      padding-left: 25%;
-      padding-right: 25%;
-      transform-origin: 0 100%;
-    }
-
-    .skw-page.inactive & {
-      opacity: 0.5;
-      transform: skewX($skewDeg) scale(0.95);
-    }
   }
 
   &__heading {
@@ -106,6 +42,9 @@ $scrollTime: 1s;
   }
 
   &-1 {
+    .skw-page__half {
+      height: 30vh;
+    }
     .skw-page__half--left .skw-page__content {
       background-color: #F7630C;
     }
@@ -127,6 +66,139 @@ $scrollTime: 1s;
     }
     .skw-page__half--right .skw-page__content {
       background-color: #f39c12;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .skw-pages {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .skw-page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    &__half {
+      position: absolute;
+      top: 0;
+      width: 50%;
+      height: 100vh;
+      z-index: -1;
+      transition: transform $scrollTime;
+
+      &--left {
+        left: 0;
+        transform: translate3d(-$magicVH, 100%, 0);
+      }
+
+      &--right {
+        left: 50%;
+        transform: translate3d($magicVH, -100%, 0);
+      }
+
+      .skw-page.active & {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    &__skewed {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 140%;
+      height: 100%;
+      transform: skewX($skewDeg * -1);
+      background: #fff;
+
+      .skw-page__half--left & {
+        left: -40%;
+      }
+      .skw-page__half--right & {
+        right: -40%;
+      }
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column wrap;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0 25%;
+      color: #000;
+      transform: skewX($skewDeg);
+      transition: transform $scrollTime, opacity $scrollTime;
+      background-size: cover;
+      font-weight: 600;
+
+      .skw-page__half--left & {
+        padding-left: 25%;
+        padding-right: 20%;
+        transform-origin: 100% 0;
+      }
+      .skw-page__half--right & {
+        padding-left: 25%;
+        padding-right: 25%;
+        transform-origin: 0 100%;
+      }
+
+      .skw-page.inactive & {
+        opacity: 0.5;
+        transform: skewX($skewDeg) scale(0.95);
+      }
+    }
+
+    &__heading {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: bolder;
+    }
+
+    &__description {
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    &__link {
+      color: #FFA0A0;
+    }
+
+    &-1 {
+      .skw-page__half {
+        height: 100vh;
+      }
+      .skw-page__half--left .skw-page__content {
+        background-color: #F7630C;
+      }
+      .skw-page__half--right .skw-page__content {
+        background-color: #B146C2;
+      }
+    }
+    &-2 {
+      .skw-page__half--left .skw-page__content {
+        background-color: #02b875;
+      }
+      .skw-page__half--right .skw-page__content {
+        background-color: #FFF59D;
+      }
+    }
+    &-3 {
+      .skw-page__half--left .skw-page__content {
+        background-color: #C239B3;
+      }
+      .skw-page__half--right .skw-page__content {
+        background-color: #f39c12;
+      }
     }
   }
 }

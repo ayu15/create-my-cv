@@ -17,8 +17,7 @@ export default class Page1 extends React.Component {
 	}
 
 	render() {
-		const leftContent =<Avatar src={avatarPic} style={MyStyles.avatarPic}
-		/>;
+		const leftContent = <Avatar src={avatarPic} style={MyStyles.avatarPic}/>;
 
 		const rightContent = <div><h2 className="skw-page__heading">Ayush Sharma</h2>
 			<Divider style={MyStyles.divider}/>
@@ -28,7 +27,6 @@ export default class Page1 extends React.Component {
 			<div className={`skw-page skw-page-1 ${this.isActive()}`}>
 				<SkewColumn side='left' content={leftContent}/>
 				<SkewColumn side='right' content={rightContent}/>
-				{/*<svg className="ca3-scroll-down-svg ca3-scroll-down-arrow"></svg>*/}
 			</div>
 		)
 	}
