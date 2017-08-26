@@ -2,9 +2,9 @@ export default {
 	icon: {
 		height: "1.8 rem",
 		width: "1.8rem",
-		color: "black",
-		"marginRight": "0.2rem",
-		"marginBottom": "-0.2rem"
+		color: "#000",
+		"margin-right": "0.2rem",
+		"margin-bottom": "-0.2rem"
 	},
 	avatarPic: {
 		height: '8rem',
@@ -23,7 +23,20 @@ export default {
 		top: '-1rem'
 	},
 	divider: {
-		"backgroundColor": '#000',
-		// "margin": '-1px 10% 0 10%'
+		"background-color": '#000',
+	},
+	srtBox: {
+		customWidth: {
+			"width": "11rem"
+		},
+		menuStyle: {
+			"background-color": "#FFF59D",
+			opacity:0.8,
+			"font-weight": "bolder"
+		},
+		floatTextStyle: {
+			opacity:0.8,
+			color: "#000"
+		}
 	}
 }

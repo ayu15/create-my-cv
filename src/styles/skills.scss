@@ -25,6 +25,17 @@
   text-align: justify;
 }
 
+.wSkl {
+  width:100%;
+  height:100%;
+}
+
+.srt-box{
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+}
+
 .smr-list {
   grid-column: 2/3;
   line-height: 130%;
@@ -39,4 +50,4 @@
     display: grid;
     grid-template-columns: 1rem 1fr 0.5rem;
   }
-}  
+}

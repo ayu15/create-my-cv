@@ -85,7 +85,6 @@ export default class SkwPages extends React.Component {
 
 	componentDidMount() {
 		document.body.addEventListener('keydown', this.handleArrowScroll, {passive: true});
-		// document.body.addEventListener('fc',h,false);// 0-50ms vs 500ms with normal click
 		document.body.addEventListener('swl', this.navigateUp, {passive: true});
 		document.body.addEventListener('swr', this.navigateDown, {passive: true});
 		document.body.addEventListener('swu', this.navigateDown, {passive: true});

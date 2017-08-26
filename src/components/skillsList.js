@@ -8,13 +8,16 @@ export default class SkillsList extends React.Component {
 
 	render() {
 		const skillText = Object.keys(this.props.list);
-		const skillStar = Object.values(this.props.list);
-
+		const t1 = Object.values(this.props.list);
+		const skillStar = [];
+		t1.forEach((item) => {
+			skillStar.push(item.rating);
+		})
 		const ratingComp = [];
 		skillStar.forEach((item, index) => {
 			const starComp = [];
 			const skillTextComp = [];
-			let borderStarCount = 5-item;
+			let borderStarCount = 5 - item;
 			while (item > 0) {
 				starComp.push(<Star color={black} style={MaterialUIStyles.star} key={item}/>);
 				item--;

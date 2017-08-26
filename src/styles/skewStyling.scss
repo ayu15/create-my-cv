@@ -98,7 +98,6 @@ $scrollTime: 1s;
       top: 0;
       width: 100%;
       height: 100vh;
-      z-index: -1;
       transition: transform $scrollTime;
 
       &--left {
@@ -218,7 +217,7 @@ $scrollTime: 1s;
 
   .cnt {
     grid-column: 2/3;
-    text-align: center;
+    margin: 0 auto;
   }
 
   .ca3-scroll-down-svg {

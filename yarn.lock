@@ -1022,8 +1022,8 @@ boom@2.x.x:
     hoek "2.x.x"
 
 bowser@^1.6.0:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/bowser/-/bowser-1.7.1.tgz#a4de8f18a1a0dc9531eb2a92a1521fb6a9ba96a5"
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/bowser/-/bowser-1.7.2.tgz#b94cc6925ba6b5e07c421a58e601ce4611264572"
 
 boxen@^0.6.0:
   version "0.6.0"
@@ -4002,9 +4002,9 @@ map-stream@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
 
-material-ui@^0.18.7:
-  version "0.18.7"
-  resolved "https://registry.yarnpkg.com/material-ui/-/material-ui-0.18.7.tgz#b87af16357e6966b36c23d489eb2ed70746d25f8"
+material-ui@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/material-ui/-/material-ui-0.19.0.tgz#9781dd5ad340afa05203091ee1f6fb8d32a5ab41"
   dependencies:
     babel-runtime "^6.23.0"
     inline-style-prefixer "^3.0.2"
