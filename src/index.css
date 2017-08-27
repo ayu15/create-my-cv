@@ -42,12 +42,10 @@ body {
 
 .skw-page__heading {
   font-size: 2rem;
-  text-align: center;
   font-weight: bolder; }
 
 .skw-page__description {
   font-size: 1.3rem;
-  text-align: center;
   font-weight: 600;
   font-style: italic; }
 
@@ -55,22 +53,22 @@ body {
   color: #FFA0A0; }
 
 .skw-page-1 .skw-page__half--left .skw-page__content {
-  background-color: #F7630C; }
+  background-color: #81D4FA; }
 
 .skw-page-1 .skw-page__half--right .skw-page__content {
-  background-color: #B146C2; }
+  background-color: #81D4FA; }
 
 .skw-page-2 .skw-page__half--left .skw-page__content {
-  background-color: #02b875; }
+  background-color: #4FC3F7; }
 
 .skw-page-2 .skw-page__half--right .skw-page__content {
-  background-color: #FFF59D; }
+  background-color: #81D4FA; }
 
 .skw-page-3 .skw-page__half--left .skw-page__content {
-  background-color: #C239B3; }
+  background-color: #4FC3F7; }
 
 .skw-page-3 .skw-page__half--right .skw-page__content {
-  background-color: #f39c12; }
+  background-color: #81D4FA; }
 
 @media (min-width: 660px) {
   .skw-pages {
@@ -146,17 +144,17 @@ body {
     .skw-page-1 .skw-page__half {
       height: 100vh; }
     .skw-page-1 .skw-page__half--left .skw-page__content {
-      background-color: #F7630C; }
+      background-color: #4FC3F7; }
     .skw-page-1 .skw-page__half--right .skw-page__content {
-      background-color: #B146C2; }
+      background-color: #81D4FA; }
     .skw-page-2 .skw-page__half--left .skw-page__content {
-      background-color: #02b875; }
+      background-color: #81D4FA; }
     .skw-page-2 .skw-page__half--right .skw-page__content {
-      background-color: #FFF59D; }
+      background-color: #4FC3F7; }
     .skw-page-3 .skw-page__half--left .skw-page__content {
-      background-color: #C239B3; }
+      background-color: #4FC3F7; }
     .skw-page-3 .skw-page__half--right .skw-page__content {
-      background-color: #f39c12; }
+      background-color: #81D4FA; }
   .cnt {
     grid-column: 2/3;
     margin: 0 auto; }
@@ -170,7 +168,7 @@ body {
   grid-template-columns: 1fr 8rem 1px 8rem 1fr; }
 
 .skl-list-cnt:hover {
-  background-color: #f0e68f; }
+  background-color: #29B6F6; }
 
 .skl-star {
   grid-column: 4/5; }

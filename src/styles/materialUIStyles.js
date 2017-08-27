@@ -35,7 +35,7 @@ export default {
 			"width": "11rem"
 		},
 		menuStyle: {
-			"background-color": "#FFF59D",
+			"background-color": "#B3E5FC",
 			opacity:0.8,
 			"font-weight": "bolder"
 		},
