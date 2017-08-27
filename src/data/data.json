@@ -33,12 +33,32 @@
         "rating": 4,
         "new" : true
       },
+      "Photoshop": {
+        "rating": 1,
+        "new" : false
+      },
+      "Karma": {
+        "rating": 4,
+        "new" : false
+      },
+      "Selenium": {
+        "rating": 4,
+        "new" : false
+      },
       "Node js": {
+        "rating": 2,
+        "new" : true
+      },
+      "Material design": {
         "rating": 4,
         "new" : true
       },
-      "Material-design": {
-        "rating": 4,
+      "AWS": {
+        "rating": 1,
+        "new" : true
+      },
+      "Firebase": {
+        "rating": 3,
         "new" : true
       }
     },

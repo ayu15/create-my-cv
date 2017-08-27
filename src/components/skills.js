@@ -132,7 +132,7 @@ export default class Skills extends React.Component {
 					             autoWidth={true}>
 						{this.sortMenuItems(sorters)}
 					</SelectField>
-					<SelectField floatingLabelText="FILTER" floatingLabelFixed={true} floatingLabelStyle={MyStyles.srtBox.floatTextStyle} autoWidth={true}
+					<SelectField floatingLabelText="FILTER:" floatingLabelFixed={true} floatingLabelStyle={MyStyles.srtBox.floatTextStyle} autoWidth={true}
 					             hintText="None" multiple={true}
 					             value={this.state.defaultFilter} onChange={this.handleFilter} style={MyStyles.srtBox.customWidth} listStyle={MyStyles.srtBox.menuStyle}
 					             selectionRenderer={this.selectionRenderer}>

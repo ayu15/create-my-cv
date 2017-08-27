@@ -7,7 +7,7 @@ $scrollTime: 1s;
   position: relative;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 660px) {
   .ca3-scroll-down-svg {
     display: none !important;
   }
@@ -31,6 +31,7 @@ $scrollTime: 1s;
     width: 100%;
     text-align: justify;
     font-weight: 600;
+    padding: 0.2rem 0;
   }
 
   &__heading {
@@ -52,7 +53,6 @@ $scrollTime: 1s;
 
   &-1 {
     .skw-page__half {
-      height: 30vh;
     }
     .skw-page__half--left .skw-page__content {
       background-color: #F7630C;
@@ -79,7 +79,7 @@ $scrollTime: 1s;
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 660px) {
   .skw-pages {
     overflow: hidden;
     height: 100vh;

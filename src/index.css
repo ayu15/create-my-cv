@@ -18,7 +18,7 @@ body {
   overflow-y: auto;
   position: relative; }
 
-@media (max-width: 480px) {
+@media (max-width: 660px) {
   .ca3-scroll-down-svg {
     display: none !important; }
   .ca3-scroll-up-svg {
@@ -37,7 +37,8 @@ body {
   height: 100%;
   width: 100%;
   text-align: justify;
-  font-weight: 600; }
+  font-weight: 600;
+  padding: 0.2rem 0; }
 
 .skw-page__heading {
   font-size: 2rem;
@@ -52,9 +53,6 @@ body {
 
 .skw-page__link {
   color: #FFA0A0; }
-
-.skw-page-1 .skw-page__half {
-  height: 30vh; }
 
 .skw-page-1 .skw-page__half--left .skw-page__content {
   background-color: #F7630C; }
@@ -74,7 +72,7 @@ body {
 .skw-page-3 .skw-page__half--right .skw-page__content {
   background-color: #f39c12; }
 
-@media (min-width: 480px) {
+@media (min-width: 660px) {
   .skw-pages {
     overflow: hidden;
     height: 100vh; }
@@ -169,14 +167,16 @@ body {
 
 .skl-list-cnt {
   display: grid;
-  grid-template-columns: 1fr 6rem 1rem 8rem 2fr; }
+  grid-template-columns: 1fr 8rem 1px 8rem 1fr; }
+
+.skl-list-cnt:hover {
+  background-color: #f0e68f; }
 
 .skl-star {
   grid-column: 4/5; }
 
 .skl-txt {
-  grid-column: 2/3;
-  text-align: right; }
+  grid-column: 2/3; }
 
 .list-cnt {
   margin-top: 0;
@@ -205,10 +205,13 @@ body {
 .smr-list-item {
   padding-top: 0.4rem; }
 
-@media (min-width: 480px) {
+@media (min-width: 660px) {
   .wSmr {
     display: grid;
-    grid-template-columns: 1rem 1fr 0.5rem; } }
+    grid-template-columns: 1rem 1fr 0.5rem; }
+  .skl-list-cnt {
+    grid-template-columns: 1fr 8rem 1px 8rem 1fr;
+    margin-right: 3rem; } }
 
 .ca3-scroll-down-svg {
   position: absolute;

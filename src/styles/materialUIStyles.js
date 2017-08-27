@@ -1,10 +1,15 @@
 export default {
 	icon: {
-		height: "1.8 rem",
-		width: "1.8rem",
-		color: "#000",
-		"margin-right": "0.2rem",
-		"margin-bottom": "-0.2rem"
+		section: {
+			height: "1.9rem",
+			width: "1.9rem",
+			fill: "#000",
+			"margin-right": "1rem",
+			"margin-bottom": "-0.2rem"
+		},
+		contact: {
+			fill: "#000"
+		},
 	},
 	avatarPic: {
 		height: '8rem',
