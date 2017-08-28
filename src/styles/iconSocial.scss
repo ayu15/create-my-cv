@@ -1,7 +1,10 @@
 .icon{
-    margin-top: 0.4rem;
-    margin-bottom: -0.4rem;
-  &-github:hover{
+    margin-top: 2vh;
+    margin-bottom: -2vh;
+  @media (min-width: 660px) {
+    height: 12vh;
+  }
+    &-github:hover{
     fill: #333;
   }
   &-linkedin:hover{

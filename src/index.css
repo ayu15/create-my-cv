@@ -285,8 +285,11 @@ body {
     opacity: 0; } }
 
 .icon {
-  margin-top: 0.4rem;
-  margin-bottom: -0.4rem; }
+  margin-top: 2vh;
+  margin-bottom: -2vh; }
+  @media (min-width: 660px) {
+    .icon {
+      height: 12vh; } }
   .icon-github:hover {
     fill: #333; }
   .icon-linkedin:hover {
