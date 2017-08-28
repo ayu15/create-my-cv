@@ -285,14 +285,15 @@ body {
     opacity: 0; } }
 
 .icon {
-  height: 3rem; }
+  margin-top: 0.4rem;
+  margin-bottom: -0.4rem; }
+  .icon-github:hover {
+    fill: #333; }
   .icon-linkedin:hover {
-    fill: #0177B5; }
-
-.icon-social {
-  height: auto;
-  top: 50%;
-  right: 0px;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%); }
+    fill: #0077B5; }
+  .icon-facebook:hover {
+    fill: #3b5999; }
+  .icon-twitter:hover {
+    fill: #55acee; }
+  .icon-skype:hover {
+    fill: #00AFF0; }

@@ -1,17 +1,19 @@
 .icon{
-  height: 3rem;
+    margin-top: 0.4rem;
+    margin-bottom: -0.4rem;
   &-github:hover{
-
+    fill: #333;
   }
   &-linkedin:hover{
-    fill: #0177B5;
+    fill: #0077B5;
   }
-}
-.icon-social{
-  height:auto; !important;
-  top:50%;!important;
-  right: 0px;!important;
-  -webkit-transform: translate(0, -50%);!important;
-  -ms-transform: translate(0, -50%);!important;
-  transform: translate(0, -50%);!important;
+  &-facebook:hover{
+    fill: #3b5999;
+  }
+  &-twitter:hover{
+    fill: #55acee;
+  }
+  &-skype:hover{
+    fill: #00AFF0;
+  }
 }
