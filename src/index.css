@@ -296,3 +296,7 @@ body {
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%); }
+
+.contact-listItem {
+  color: #000;
+  background-color: #ff6700; }

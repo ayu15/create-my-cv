@@ -1,17 +1,37 @@
-.icon{
+.icon {
   height: 3rem;
-  &-github:hover{
+  &-github:hover {
 
   }
-  &-linkedin:hover{
+  &-linkedin:hover {
     fill: #0177B5;
   }
 }
-.icon-social{
-  height:auto; !important;
-  top:50%;!important;
-  right: 0px;!important;
-  -webkit-transform: translate(0, -50%);!important;
-  -ms-transform: translate(0, -50%);!important;
-  transform: translate(0, -50%);!important;
+
+.icon-social {
+  height: auto;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.contact {
+  //color: #000;
+  //background-color: #ff6700;
+}
+.contact-listItem {
+  color: #000;
+  background-color: #ff6700;
+}
+
+.contact-subheader {
+  //font-weight: bolder;
+  //font-size: 1.3rem;
+  //background-color: #ff37ba;
+}
+
+.sDrawer {
+  //background-color: #ff37ba;
 }
