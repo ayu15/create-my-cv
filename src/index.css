@@ -49,9 +49,6 @@ body {
   font-weight: 600;
   font-style: italic; }
 
-.skw-page__link {
-  color: #FFA0A0; }
-
 .skw-page-1 .skw-page__half--left .skw-page__content {
   background-color: #81D4FA; }
 
@@ -139,8 +136,6 @@ body {
       text-align: center;
       font-weight: 600;
       font-style: italic; }
-    .skw-page__link {
-      color: #FFA0A0; }
     .skw-page-1 .skw-page__half {
       height: 100vh; }
     .skw-page-1 .skw-page__half--left .skw-page__content {
@@ -288,3 +283,16 @@ body {
   100% {
     transform: translate(0, -1rem);
     opacity: 0; } }
+
+.icon {
+  height: 3rem; }
+  .icon-linkedin:hover {
+    fill: #0177B5; }
+
+.icon-social {
+  height: auto;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%); }

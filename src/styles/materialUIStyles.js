@@ -9,7 +9,7 @@ export default {
 		},
 		contact: {
 			fill: "#000"
-		},
+		}
 	},
 	avatarPic: {
 		height: '8rem',
@@ -36,11 +36,11 @@ export default {
 		},
 		menuStyle: {
 			"background-color": "#B3E5FC",
-			opacity:0.8,
+			opacity: 0.8,
 			"font-weight": "bolder"
 		},
 		floatTextStyle: {
-			opacity:0.8,
+			opacity: 0.8,
 			color: "#000"
 		}
 	}

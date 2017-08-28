@@ -1,0 +1,17 @@
+.icon{
+  height: 3rem;
+  &-github:hover{
+
+  }
+  &-linkedin:hover{
+    fill: #0177B5;
+  }
+}
+.icon-social{
+  height:auto; !important;
+  top:50%;!important;
+  right: 0px;!important;
+  -webkit-transform: translate(0, -50%);!important;
+  -ms-transform: translate(0, -50%);!important;
+  transform: translate(0, -50%);!important;
+}

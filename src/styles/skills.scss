@@ -1,10 +1,11 @@
+$bg-color-menu-hover: #29B6F6;
 .skl-list-cnt {
   display: grid;
   grid-template-columns: 1fr 8rem 1px 8rem 1fr;
 }
 
 .skl-list-cnt:hover {
-  background-color: #29B6F6;
+  background-color: $bg-color-menu-hover;
 }
 
 .skl-star {
