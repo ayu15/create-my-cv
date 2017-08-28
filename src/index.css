@@ -41,7 +41,7 @@ body {
   padding: 0.2rem 0; }
 
 .skw-page__heading {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bolder; }
 
 .skw-page__description {
@@ -128,11 +128,11 @@ body {
         opacity: 0.5;
         transform: skewX(10deg) scale(0.95); }
     .skw-page__heading {
-      font-size: 2rem;
+      font-size: 1.7rem;
       text-align: center;
       font-weight: bolder; }
     .skw-page__description {
-      font-size: 1.3rem;
+      font-size: 1.15rem;
       text-align: center;
       font-weight: 600;
       font-style: italic; }
