@@ -15,6 +15,7 @@ import CopyToClipboard from 'react-copy-to-clipboard';
 import ReactTooltip from 'react-tooltip';
 import SocialIcons from './socialIcons';
 import RaisedButton from 'material-ui/RaisedButton';
+import IconSend from 'material-ui/svg-icons/content/send';
 
 const email = "ayush.sharma1505@gmail.com";
 const mobile = "+44 77218 25549";
@@ -65,15 +66,17 @@ export default class Page1 extends React.Component {
 				<Divider style={MyStyles.divider}
 				         inset={true}
 				/>
-				<ReactTooltip id='emailTooltip'><p>copy to clipboard</p></ReactTooltip>
-				<CopyToClipboard text={email} onCopy={this.copyEmail}>
-					<ListItem
-						leftIcon={<CommunicationEmail style={MyStyles.icon.contact}/>}
-						primaryText={<div style={{color: '#000', "font-weight":'bolder'}}>{email}</div>}
-						data-tip data-for="emailTooltip"
-						onKeyboardFocus={null}
-					/>
-				</CopyToClipboard>
+				<ReactTooltip id='emailTooltip'>
+					<p>copy to clipboard</p>
+				</ReactTooltip>
+				<ListItem
+					leftIcon={<CommunicationEmail style={MyStyles.icon.contact}/>}
+					rightIcon={<a href="mailto:ayush.sharma1505@gmail.com"><IconSend style={MyStyles.icon.contact}/></a>}
+					primaryText={<CopyToClipboard text={email} onCopy={this.copyEmail}>
+						<div style={{color: '#000', "font-weight": 'bolder'}} data-tip data-for="emailTooltip">{email}</div>
+					</CopyToClipboard>}
+					onKeyboardFocus={null}
+				/>
 				<Snackbar
 					open={this.state.copyEmail}
 					message={msgEmailCopy}
@@ -82,7 +85,7 @@ export default class Page1 extends React.Component {
 				/>
 				<ListItem
 					leftIcon={<CommunicationCall style={MyStyles.icon.contact}/>}
-					primaryText={<div style={{color: '#000', "font-weight":'bolder'}}>{mobile}</div>}
+					primaryText={<div style={{color: '#000', "font-weight": 'bolder'}}>{mobile}</div>}
 					secondaryText="Mobile"
 					onKeyboardFocus={null}
 				/>
@@ -94,7 +97,7 @@ export default class Page1 extends React.Component {
 						disableFocusRipple={true}
 						primary={true}
 						onClick={this.openSocialDrawer}
-						labelStyle={{color: '#000', "font-weight":'bolder'}}
+						labelStyle={{color: '#000', "font-weight": 'bolder'}}
 						style={{"margin-top": '-0.7rem'}}
 					/>}
 				/>
@@ -111,9 +114,8 @@ export default class Page1 extends React.Component {
 					width={'15%'}
 					open={this.state.drawerOpen}
 					onRequestChange={(open) => this.setState({drawerOpen: open})}
-				  children={<SocialIcons/>}
-				>
-				</Drawer>
+					children={<SocialIcons/>}
+				/>
 			</div>
 		)
 	}
