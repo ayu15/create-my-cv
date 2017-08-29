@@ -66,14 +66,17 @@ export default class Page1 extends React.Component {
 				<Divider style={MyStyles.divider}
 				         inset={true}
 				/>
-				<ReactTooltip id='emailTooltip'>
+				<ReactTooltip id='copyClipboard'>
 					<p>copy to clipboard</p>
+				</ReactTooltip>
+				<ReactTooltip id='sendEmail'>
+					<p>send Email</p>
 				</ReactTooltip>
 				<ListItem
 					leftIcon={<CommunicationEmail style={MyStyles.icon.contact}/>}
-					rightIcon={<a href="mailto:ayush.sharma1505@gmail.com"><IconSend style={MyStyles.icon.contact}/></a>}
+					rightIcon={<a href="mailto:ayush.sharma1505@gmail.com"><IconSend style={MyStyles.icon.contact} data-tip data-for="sendEmail"/></a>}
 					primaryText={<CopyToClipboard text={email} onCopy={this.copyEmail}>
-						<div style={{color: '#000', "font-weight": 'bolder'}} data-tip data-for="emailTooltip">{email}</div>
+						<div style={{color: '#000', "font-weight": 'bolder'}} data-tip data-for="copyClipboard">{email}</div>
 					</CopyToClipboard>}
 					onKeyboardFocus={null}
 				/>
