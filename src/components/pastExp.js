@@ -1,5 +1,5 @@
 import React from 'react';
-import { Step, Stepper, StepLabel, StepButton, StepContent } from 'material-ui/Stepper';
+import { Step, Stepper, StepButton, StepContent } from 'material-ui/Stepper';
 import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
 import { List, ListItem } from 'material-ui/List';
@@ -43,10 +43,10 @@ export default class PastExp extends React.Component {
 
 	steps(labels) {
 		return labels.map((label, index) => (
-			<Step>
+			<Step key={index}>
 				<StepButton onClick={() => this.setState({stepIndex: index})}
 				            icon={index === 0 ? <IconSchool/> : index === 1 ? <IconOne/> : index === 2 ? <IconTwo/> : index}>
-					{label}
+					<div style={{color: '#000', "font-weight":'bolder'}}>{label}</div>
 				</StepButton>
 				<StepContent>
 					<List>
@@ -71,7 +71,7 @@ export default class PastExp extends React.Component {
 						primary={true}
 						onClick={this.handleNext}
 						style={{marginRight: 12,}}
-						labelStyle={{color: '#000'}}
+						labelStyle={{color: '#000', "font-weight":'bolder'}}
 						// buttonStyle = {{'background-color':'#1abc9c'}}
 					/>)}
 				{step > 0 && (
@@ -80,6 +80,7 @@ export default class PastExp extends React.Component {
 						disableTouchRipple={true}
 						disableFocusRipple={true}
 						onClick={this.handlePrev}
+						labelStyle={{color: '#000', "font-weight":'bolder'}}
 					/>
 				)}
 			</div>

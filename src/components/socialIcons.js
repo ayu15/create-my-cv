@@ -25,8 +25,8 @@ export default class SocialIcons extends React.Component {
 
 	socialMenuItems(icons) {
 		return icons.map((icon, index) => (
-			<a href = {icon.href} target="_blank">
-			<MenuItem key={index}>
+			<a key={index} href = {icon.href} target="_blank" rel="noopener">
+			<MenuItem>
 					{icon.svg}
 			</MenuItem>
 			</a>

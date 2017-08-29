@@ -14,6 +14,7 @@ import Snackbar from 'material-ui/Snackbar';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import ReactTooltip from 'react-tooltip';
 import SocialIcons from './socialIcons';
+import RaisedButton from 'material-ui/RaisedButton';
 
 const email = "ayush.sharma1505@gmail.com";
 const mobile = "+44 77218 25549";
@@ -68,8 +69,9 @@ export default class Page1 extends React.Component {
 				<CopyToClipboard text={email} onCopy={this.copyEmail}>
 					<ListItem
 						leftIcon={<CommunicationEmail style={MyStyles.icon.contact}/>}
-						primaryText={email}
+						primaryText={<div style={{color: '#000', "font-weight":'bolder'}}>{email}</div>}
 						data-tip data-for="emailTooltip"
+						onKeyboardFocus={null}
 					/>
 				</CopyToClipboard>
 				<Snackbar
@@ -80,13 +82,21 @@ export default class Page1 extends React.Component {
 				/>
 				<ListItem
 					leftIcon={<CommunicationCall style={MyStyles.icon.contact}/>}
-					primaryText={mobile}
+					primaryText={<div style={{color: '#000', "font-weight":'bolder'}}>{mobile}</div>}
 					secondaryText="Mobile"
+					onKeyboardFocus={null}
 				/>
 				<ListItem
 					leftIcon={<IconPersonAdd style={MyStyles.icon.contact}/>}
-					primaryText="Social platforms"
-					onClick={this.openSocialDrawer}
+					primaryText={<RaisedButton
+						label="Social platforms"
+						disableTouchRipple={true}
+						disableFocusRipple={true}
+						primary={true}
+						onClick={this.openSocialDrawer}
+						labelStyle={{color: '#000', "font-weight":'bolder'}}
+						style={{"margin-top": '-0.7rem'}}
+					/>}
 				/>
 			</List>
 		</div>;
