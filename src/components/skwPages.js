@@ -84,11 +84,15 @@ export default class SkwPages extends React.Component {
 	};
 
 	componentDidMount() {
+		let screenWidth = window.matchMedia("(min-width: 600px)");
+		if (screenWidth.matches) {
+			document.body.addEventListener('swl', this.navigateUp, {passive: true});
+			document.body.addEventListener('swr', this.navigateDown, {passive: true});
+			document.body.addEventListener('swu', this.navigateDown, {passive: true});
+			document.body.addEventListener('swd', this.navigateUp, {passive: true});
+		}
 		document.body.addEventListener('keydown', this.handleArrowScroll, {passive: true});
-		document.body.addEventListener('swl', this.navigateUp, {passive: true});
-		document.body.addEventListener('swr', this.navigateDown, {passive: true});
-		document.body.addEventListener('swu', this.navigateDown, {passive: true});
-		document.body.addEventListener('swd', this.navigateUp, {passive: true});
+		this.skwPages.addEventListener('wheel', this.handleScroll, {passive: true});
 	}
 
 	componentWillUnmount() {
@@ -119,7 +123,7 @@ export default class SkwPages extends React.Component {
 
 	render() {
 		return (
-			<div className="skw-pages" onWheel={this.handleScroll}>
+			<div className="skw-pages" ref={(elem) => { this.skwPages = elem; }}>
 				{this.state.curPage !== this.state.numOfPages ?
 					<IconExpandMore className="ca3-scroll-down-svg" style={MyStyles.downArrow}/> : null}
 				{this.state.curPage !== 1 ? <IconExpandLess className="ca3-scroll-up-svg" style={MyStyles.upArrow}/> : null}
