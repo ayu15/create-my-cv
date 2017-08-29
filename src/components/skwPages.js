@@ -90,9 +90,9 @@ export default class SkwPages extends React.Component {
 			document.body.addEventListener('swr', this.navigateDown, {passive: true});
 			document.body.addEventListener('swu', this.navigateDown, {passive: true});
 			document.body.addEventListener('swd', this.navigateUp, {passive: true});
+			document.body.addEventListener('keydown', this.handleArrowScroll, {passive: true});
+			this.skwPages.addEventListener('wheel', this.handleScroll, {passive: true});
 		}
-		document.body.addEventListener('keydown', this.handleArrowScroll, {passive: true});
-		this.skwPages.addEventListener('wheel', this.handleScroll, {passive: true});
 	}
 
 	componentWillUnmount() {
