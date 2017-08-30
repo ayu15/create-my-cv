@@ -46,7 +46,7 @@ export default class PastExp extends React.Component {
 			<Step key={index}>
 				<StepButton onClick={() => this.setState({stepIndex: index})}
 				            icon={index === 0 ? <IconSchool/> : index === 1 ? <IconOne/> : index === 2 ? <IconTwo/> : index}>
-					<div style={{color: '#000', "font-weight":'bolder'}}>{label}</div>
+					<div style={{color: '#000'}}>{label}</div>
 				</StepButton>
 				<StepContent>
 					<List>
@@ -91,7 +91,7 @@ export default class PastExp extends React.Component {
 		const {stepIndex} = this.state;
 
 		return (
-			<div style={{maxWidth: 420, maxHeight: 512, margin: 'auto'}}>
+			<div style={{margin: 'auto'}}>
 				<Stepper
 					activeStep={stepIndex}
 					linear={false}

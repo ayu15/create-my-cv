@@ -286,7 +286,19 @@ body {
 
 .icon {
   margin-top: 2vh;
-  margin-bottom: -2vh; }
+  margin-bottom: -2vh;
+  -webkit-transition: -webkit-transform 0.0s;
+  -moz-transition: -moz-transform 0.0s;
+  -o-transition: -o-transition 0.0s;
+  transition: transform 0.0s; }
+  .icon:hover, .icon:focus {
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    -o-transition: -o-transition 0.5s ease-out;
+    transition: transform 0.5s ease-out; }
   @media (min-width: 660px) {
     .icon {
       height: 12vh; } }

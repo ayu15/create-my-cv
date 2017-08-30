@@ -1,22 +1,39 @@
-.icon{
-    margin-top: 2vh;
-    margin-bottom: -2vh;
+.icon {
+  margin-top: 2vh;
+  margin-bottom: -2vh;
+
+  -webkit-transition: -webkit-transform 0.0s ;
+  -moz-transition: -moz-transform 0.0s ;
+  -o-transition: -o-transition 0.0s ;
+  transition: transform 0.0s;
+
+  &:hover, &:focus{
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    -o-transition: -o-transition 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+  }
+
   @media (min-width: 660px) {
     height: 12vh;
   }
-    &-github:hover{
+  &-github:hover {
     fill: #333;
   }
-  &-linkedin:hover{
+  &-linkedin:hover {
     fill: #0077B5;
   }
-  &-facebook:hover{
+  &-facebook:hover {
     fill: #3b5999;
   }
-  &-twitter:hover{
+  &-twitter:hover {
     fill: #55acee;
   }
-  &-skype:hover{
+  &-skype:hover {
     fill: #00AFF0;
   }
 }

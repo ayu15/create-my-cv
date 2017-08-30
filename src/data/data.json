@@ -11,62 +11,59 @@
     "techStack": {
       "Angular": {
         "rating": 4,
-        "new" : false
+        "new": false
       },
       "React": {
         "rating": 4,
-        "new" : false
+        "new": false
       },
       "Javascript": {
         "rating": 4,
-        "new" : false
+        "new": false
       },
       "CSS/SCSS": {
         "rating": 3,
-        "new" : true
+        "new": true
       },
       "Git": {
         "rating": 4,
-        "new" : false
+        "new": false
       },
       "Webpack": {
         "rating": 4,
-        "new" : true
+        "new": true
       },
       "Photoshop": {
         "rating": 1,
-        "new" : false
+        "new": false
       },
       "Karma": {
         "rating": 4,
-        "new" : false
+        "new": false
       },
       "Selenium": {
         "rating": 4,
-        "new" : false
+        "new": false
       },
       "Node js": {
         "rating": 2,
-        "new" : true
+        "new": true
       },
       "Material design": {
         "rating": 4,
-        "new" : true
+        "new": true
       },
       "AWS": {
         "rating": 1,
-        "new" : true
+        "new": true
       },
       "Firebase": {
         "rating": 3,
-        "new" : true
-      }
-    },
-    "education": {
-      "graduation": {
-        "college": "SGSITS, Indore",
-        "year": "2010 - 2014",
-        "GPA": 7.2
+        "new": true
+      },
+      "Jira": {
+        "rating": 4,
+        "new": false
       }
     },
     "experience": [
@@ -89,14 +86,48 @@
         "location": "London"
       }
     ],
-     "SocialLinks": {
-      "github": 123,
-      "linkedIn": 123,
-      "twitter": 123,
-      "stack overflow": 123,
-      "quora": 123,
-      "facebook": 123,
-      "gmail": 123
+    "skillSet": {
+      "Components based UI development": {
+        "subHeading": "Building app using small, independent and reusable components",
+        "detail": [
+          "Separating rendering UI and network services in ES6 or typescript modules",
+          "Using webpack for bundling and preprocessing"
+        ]
+      },
+      "Responsive layout design": {
+        "subHeading": "Adjusting the app behaviour for different screen sizes",
+        "detail": [
+          "Using media queries, grid and flexbox",
+          "Lazy loading optimized resources as per screen size"
+        ]
+      },
+      "Cross Browser compatibility": {
+        "subHeading": "Rendering similar visuals across different browsers",
+        "detail": [
+          "Using appropriate polyfills for unsupported APIs"
+        ]
+      },
+      "Progressive Web Apps": {
+        "subHeading": "Providing native mobile app behavior and offline viewing",
+        "detail": [
+          "Using service worker, web manifest and caching",
+          "Try going offline and refresh this page"
+        ]
+      },
+      "Continuous integration continuous deployment": {
+        "subHeading": "Setting automated pipeline to reduce time to test and deploy",
+        "detail": [
+          "Using gulp/grunt task runners to watch and act",
+          "Initiate unit test on commit push and auto deploy if tests pass"
+        ]
+      },
+      "Performance optimization": {
+        "subHeading": "Delivering quick app loading",
+        "detail": [
+          "Separate compressed bundle of critical resources for first paint",
+          "Async loading of resources as required"
+        ]
+      }
     }
   }
 }

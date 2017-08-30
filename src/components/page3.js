@@ -4,6 +4,7 @@ import PastExp from './pastExp';
 import MyStyles from '../styles/materialUIStyles';
 import Divider from 'material-ui/Divider';
 import IconPastExp from 'material-ui/svg-icons/notification/event-note';
+import SkillDetails from './skillDetails';
 
 export default class Page3 extends React.Component {
 
@@ -22,7 +23,9 @@ export default class Page3 extends React.Component {
 			<Divider style={MyStyles.divider}/>
 			<PastExp/></div>;
 
-		const rightContent = <div className='cnt'></div>;
+		const rightContent = <div className='cnt'><div className="skw-page__heading"><IconPastExp style={MyStyles.icon.section}/>Details</div>
+			<Divider style={MyStyles.divider}/>
+			<SkillDetails/></div>;
 
 		return (
 			<div className={`skw-page skw-page-3 ${this.isActive()}`}>
