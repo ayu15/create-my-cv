@@ -4,8 +4,6 @@ import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
 import { List, ListItem } from 'material-ui/List';
 import IconSchool from 'material-ui/svg-icons/social/school';
-import IconOne from 'material-ui/svg-icons/image/looks-one';
-import IconTwo from 'material-ui/svg-icons/image/looks-two';
 
 import data from '../data/data.json';
 const exp = data.ayush123.experience;
@@ -20,6 +18,10 @@ const expCmp = exp.map((item) => {
 	return item.name
 });
 
+const expLoc = exp.map((item) => {
+	return item.location
+});
+
 export default class PastExp extends React.Component {
 
 	constructor(props) {
@@ -29,7 +31,7 @@ export default class PastExp extends React.Component {
 
 	handleNext = () => {
 		const {stepIndex} = this.state;
-		if (stepIndex < 2) {
+		if (stepIndex < 3) {
 			this.setState({stepIndex: stepIndex + 1});
 		}
 	};
@@ -45,12 +47,12 @@ export default class PastExp extends React.Component {
 		return labels.map((label, index) => (
 			<Step key={index}>
 				<StepButton onClick={() => this.setState({stepIndex: index})}
-				            icon={index === 0 ? <IconSchool/> : index === 1 ? <IconOne/> : index === 2 ? <IconTwo/> : index}>
+				            icon={index === 0 ? <IconSchool/> : index}>
 					<div style={{color: '#000'}}>{label}</div>
 				</StepButton>
 				<StepContent>
 					<List>
-						<ListItem primaryText={expCmp[index]}
+						<ListItem primaryText={`${expCmp[index]}	(${expLoc[index]})`}
 						          secondaryText={expDgn[index]}
 						/>
 					</List>
@@ -63,7 +65,7 @@ export default class PastExp extends React.Component {
 	renderStepActions(step) {
 		return (
 			<div style={{margin: '12px 0'}}>
-				{step < 2 && (
+				{step < 3 && (
 					<RaisedButton
 						label="Next"
 						disableTouchRipple={true}

@@ -2,7 +2,6 @@ import React from 'react';
 import SkewColumn from './skewColumn';
 import Avatar from 'material-ui/Avatar';
 import MyStyles from '../styles/materialUIStyles';
-import avatarPic from '../assets/img/avatar.png';
 import Divider from 'material-ui/Divider';
 import { List, ListItem } from 'material-ui/List';
 import CommunicationCall from 'material-ui/svg-icons/communication/call';
@@ -17,8 +16,11 @@ import SocialIcons from './socialIcons';
 import RaisedButton from 'material-ui/RaisedButton';
 import IconSend from 'material-ui/svg-icons/content/send';
 
-const email = "ayush.sharma1505@gmail.com";
-const mobile = "+44 77218 25549";
+import avatarPic from '../assets/img/avatar.png';
+import data from '../data/data.json';
+
+const email = data.ayush123.emailID;
+const mobile = data.ayush123.mobileNumber;
 const msgEmailCopy = "Email id copied to clipboard";
 
 export default class Page1 extends React.Component {

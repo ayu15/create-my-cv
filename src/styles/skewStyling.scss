@@ -1,4 +1,4 @@
-$skewDeg: 10deg;
+$skewDeg: 0deg;
 $magicVH: 18vh; // this number is magic and depends on skew angle
 $scrollTime: 1s;
 $bg-color1: #81D4FA;
@@ -116,22 +116,22 @@ $txt-primary: #000;
       overflow: hidden;
       position: absolute;
       top: 0;
-      width: 140%;
+      width: 100%;
       height: 100%;
       transform: skewX($skewDeg * -1);
       background: #fff;
 
       .skw-page__half--left & {
-        left: -40%;
+        left: 0%;
       }
       .skw-page__half--right & {
-        right: -40%;
+        right: 0%;
       }
     }
 
     &__content {
       display: grid;
-      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr;
       left: 0;
       top: 0;
       width: 100%;
@@ -143,19 +143,19 @@ $txt-primary: #000;
       font-weight: 600;
 
       .skw-page__half--left & {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         transform-origin: 100% 0;
       }
       .skw-page__half--right & {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         transform-origin: 0 100%;
       }
 
       .skw-page.inactive & {
         opacity: 0.5;
-        transform: skewX($skewDeg) scale(0.95);
+        transform: skewX($skewDeg);
       }
     }
 

@@ -96,37 +96,37 @@ body {
       overflow: hidden;
       position: absolute;
       top: 0;
-      width: 140%;
+      width: 100%;
       height: 100%;
-      transform: skewX(-10deg);
+      transform: skewX(0deg);
       background: #fff; }
       .skw-page__half--left .skw-page__skewed {
-        left: -40%; }
+        left: 0%; }
       .skw-page__half--right .skw-page__skewed {
-        right: -40%; }
+        right: 0%; }
     .skw-page__content {
       display: grid;
-      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
       color: #000;
-      transform: skewX(10deg);
+      transform: skewX(0deg);
       transition: transform 1s, opacity 1s;
       background-size: cover;
       font-weight: 600; }
       .skw-page__half--left .skw-page__content {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         transform-origin: 100% 0; }
       .skw-page__half--right .skw-page__content {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
         transform-origin: 0 100%; }
       .skw-page.inactive .skw-page__content {
         opacity: 0.5;
-        transform: skewX(10deg) scale(0.95); }
+        transform: skewX(0deg); }
     .skw-page__heading {
       font-size: 1.7rem;
       text-align: center;
@@ -208,7 +208,7 @@ body {
 
 .ca3-scroll-down-svg {
   position: absolute;
-  left: 45%;
+  left: 47%;
   z-index: 2;
   -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
   -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
@@ -247,7 +247,7 @@ body {
 
 .ca3-scroll-up-svg {
   position: absolute;
-  left: 45%;
+  left: 47%;
   z-index: 2;
   -webkit-animation: ca3_fade_move_up 2s ease-in-out infinite;
   -moz-animation: ca3_fade_move_up 2s ease-in-out infinite;

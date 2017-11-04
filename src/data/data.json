@@ -7,7 +7,8 @@
       "Delivering apps with high performance, user friendly, multi platform compatible.",
       "Staying updated with latest tech trends via blogs, courses, conferences and incorporating best practices."
     ],
-    "emailID": "ayush15may@gmail.com",
+    "emailID": "ayush.sharma1505@gmail.com",
+    "mobileNumber":"+91 8989 404 278",
     "techStack": {
       "Angular": {
         "rating": 4,
@@ -68,7 +69,7 @@
     },
     "experience": [
       {
-        "name": "SGSITS, Indore",
+        "name": "SGSITS",
         "position": "Graduate scholar",
         "year": "Aug 2010 - May 2014",
         "location": "Indore"
@@ -82,8 +83,14 @@
       {
         "name": "Infosys Ltd.",
         "position": "UI developer",
-        "year": "Dec 2016 - Present",
+        "year": "Dec 2016 - Oct 2017",
         "location": "London"
+      },
+      {
+        "name": "Infosys Ltd.",
+        "position": "UI developer",
+        "year": "Oct 2017 - Present",
+        "location": "Chennai"
       }
     ],
     "skillSet": {
@@ -114,7 +121,7 @@
           "Try going offline and refresh this page"
         ]
       },
-      "Continuous integration continuous deployment": {
+      "Continuous integration and deployment": {
         "subHeading": "Setting automated pipeline to reduce time to test and deploy",
         "detail": [
           "Using gulp/grunt task runners to watch and act",
