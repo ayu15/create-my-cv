@@ -16,7 +16,7 @@ import SocialIcons from './socialIcons';
 import RaisedButton from 'material-ui/RaisedButton';
 import IconSend from 'material-ui/svg-icons/content/send';
 
-import avatarPic from '../assets/img/avatar.png';
+import avatarPic from '../assets/img/avatar2.jpg';
 import data from '../data/data.json';
 
 const email = data.ayush123.emailID;

@@ -1,14 +1,19 @@
 {
   "ayush123": {
     "summary": [
-      "Currently and from last 3 years, I am working at Infosys Ltd. as Front-end web developer.",
+      "Working at Infosys Ltd. since June 2014 as Front-end web developer.",
       "Long term aspiration is a career as tech architecture.",
-      "Creating clean and aesthetic UI with pleasing UX is my primary job.",
-      "Delivering apps with high performance, user friendly, multi platform compatible.",
-      "Staying updated with latest tech trends via blogs, courses, conferences and incorporating best practices."
+      "Experienced working in direct client facing environment at client’s London office and delivering within tight deadlines.",
+      "Experienced in understanding requirements from product team and estimate the required effort.",
+      "Developed the UI of data driven web apps using popular libraries like React, Angular, D3, jQuery, Bootstrap.",
+      "Delivering apps with high performance, user friendly, multi device and cross browser compatible.",
+      "Interacting with 3rd party APIs and consuming RESTful APIs.",
+      "Scripted automated tests for nightly regression testing.",
+      "Architectured the unit testing environment for web apps written in Angular, jQuery or plain javascript.",
+      "Always abreast with latest web technologies, frameworks, tools and news. Indulged in offline online courses to keep improving skills."
     ],
     "emailID": "ayush.sharma1505@gmail.com",
-    "mobileNumber":"+91 8989 404 278",
+    "mobileNumber":"+91 9340708178",
     "techStack": {
       "Angular": {
         "rating": 4,
@@ -19,14 +24,26 @@
         "new": false
       },
       "Javascript": {
-        "rating": 4,
+        "rating": 5,
         "new": false
+      },
+      "D3.js": {
+        "rating": 3,
+        "new": true
+      },
+      "Material design": {
+        "rating": 4,
+        "new": true
       },
       "CSS/SCSS": {
         "rating": 3,
         "new": true
       },
-      "Git": {
+      "Semantic UI": {
+        "rating": 4,
+        "new": false
+      },
+      "Git, Jira": {
         "rating": 4,
         "new": false
       },
@@ -34,63 +51,55 @@
         "rating": 4,
         "new": true
       },
+      "TypeScript": {
+        "rating": 3,
+        "new": false
+      },
+      "jQuery": {
+        "rating": 4,
+        "new": false
+      },
       "Photoshop": {
         "rating": 1,
-        "new": false
-      },
-      "Karma": {
-        "rating": 4,
-        "new": false
-      },
-      "Selenium": {
-        "rating": 4,
         "new": false
       },
       "Node js": {
         "rating": 2,
         "new": true
       },
-      "Material design": {
-        "rating": 4,
+      "Firebase": {
+        "rating": 3,
         "new": true
       },
       "AWS": {
         "rating": 1,
         "new": true
-      },
-      "Firebase": {
-        "rating": 3,
-        "new": true
-      },
-      "Jira": {
-        "rating": 4,
-        "new": false
       }
     },
     "experience": [
       {
         "name": "SGSITS",
-        "position": "Graduate scholar",
+        "position": "Graduation in Engineering",
         "year": "Aug 2010 - May 2014",
-        "location": "Indore"
+        "location": "Indore, India"
       },
       {
         "name": "Infosys Ltd.",
-        "position": "Software engineer",
+        "position": "UI Devloper",
         "year": "Jun 2014 - Nov 2016",
-        "location": "Pune"
+        "location": "Pune, India"
       },
       {
         "name": "Infosys Ltd.",
-        "position": "UI developer",
+        "position": "UI developer/ Test automator",
         "year": "Dec 2016 - Oct 2017",
-        "location": "London"
+        "location": "London, UK"
       },
       {
         "name": "Infosys Ltd.",
-        "position": "UI developer",
-        "year": "Oct 2017 - Present",
-        "location": "Chennai"
+        "position": "UI developer/ Test automator",
+        "year": "Nov 2017 - Present",
+        "location": "Chennai, India"
       }
     ],
     "skillSet": {
@@ -121,18 +130,25 @@
           "Try going offline and refresh this page"
         ]
       },
-      "Continuous integration and deployment": {
-        "subHeading": "Setting automated pipeline to reduce time to test and deploy",
-        "detail": [
-          "Using gulp/grunt task runners to watch and act",
-          "Initiate unit test on commit push and auto deploy if tests pass"
-        ]
-      },
       "Performance optimization": {
         "subHeading": "Delivering quick app loading",
         "detail": [
           "Separate compressed bundle of critical resources for first paint",
           "Async loading of resources as required"
+        ]
+      },
+      "Unit testing": {
+        "subHeading": "Writing unit tests to ensure quality check",
+        "detail": [
+          "Automatic run of unit tests on every code push",
+          "Customized framework of Jasmine, Karma and Istanbul code coverage"
+        ]
+      },
+      "Test automation": {
+        "subHeading": "Easing tester's work by automating test cases for regression",
+        "detail": [
+          "Understanding regression test cases from core testing team and automating it",
+          "Framework consisted of Cucumber, protractor, webdriver and grunt"
         ]
       }
     }
