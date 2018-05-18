@@ -5,6 +5,7 @@ import Page3 from './page3';
 import IconExpandMore from 'material-ui/svg-icons/navigation/expand-more';
 import IconExpandLess from 'material-ui/svg-icons/navigation/expand-less';
 import MyStyles from '../styles/materialUIStyles';
+import Snackbar from 'material-ui/Snackbar';
 
 export default class SkwPages extends React.Component {
 
@@ -14,20 +15,22 @@ export default class SkwPages extends React.Component {
 			scrolling: false,
 			curPage: 1,
 			numOfPages: 3,
-			animTime: 1000
+			animTime: 1000,
+			notify: true
 		};
 		this.handleScroll = this.handleScroll.bind(this);
 		this.handleArrowScroll = this.handleArrowScroll.bind(this);
 		this.pagination = this.pagination.bind(this);
 		this.navigateUp = this.navigateUp.bind(this);
 		this.navigateDown = this.navigateDown.bind(this);
+		// this.handleNotifyClose = this.handleNotifyClose.bind(this);
 	}
 
 	customSwipeEvent() {
 		(function (d) {
-			var
+			let
 				ce = function (e, n) {
-					var a = document.createEvent("CustomEvent");
+					let a = document.createEvent("CustomEvent");
 					a.initCustomEvent(n, true, true, e.target);
 					e.target.dispatchEvent(a);
 					a = null;
@@ -46,7 +49,7 @@ export default class SkwPages extends React.Component {
 						if (nm) {
 							ce(e, 'fc')
 						} else {
-							var x = ep.x - sp.x, xr = Math.abs(x), y = ep.y - sp.y, yr = Math.abs(y);
+							let x = ep.x - sp.x, xr = Math.abs(x), y = ep.y - sp.y, yr = Math.abs(y);
 							if (Math.max(xr, yr) > 20) {
 								ce(e, (xr > yr ? (x < 0 ? 'swl' : 'swr') : (y < 0 ? 'swu' : 'swd')))
 							}
@@ -58,7 +61,7 @@ export default class SkwPages extends React.Component {
 						nm = false
 					}
 				};
-			for (var a in touch) {
+			for (let a in touch) {
 				d.addEventListener(a, touch[a], false);
 			}
 		})(document);
@@ -123,11 +126,20 @@ export default class SkwPages extends React.Component {
 		}
 	}
 
+	// handleNotifyClose() {
+	// 	document.location.reload(true);
+	// }
+
 	render() {
 		return (
 			<div className="skw-pages" onWheel={this.handleScroll}
 			     // ref={(elem) => { this.skwPages = elem; }}
 			>
+				<Snackbar
+						className="new-update" style={{display : "none", "z-index": 2 }}
+						open={this.state.notify}
+						message="New version of page is available, refreshing automatically..."
+				/>
 				{this.state.curPage !== this.state.numOfPages ?
 					<IconExpandMore className="ca3-scroll-down-svg" style={MyStyles.downArrow}/> : null}
 				{this.state.curPage !== 1 ? <IconExpandLess className="ca3-scroll-up-svg" style={MyStyles.upArrow}/> : null}

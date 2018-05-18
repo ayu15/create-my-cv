@@ -1,19 +1,18 @@
 {
   "ayush123": {
     "summary": [
-      "Working at Infosys Ltd. since June 2014 as Front-end web developer.",
-      "Long term aspiration is a career as tech architecture.",
-      "Experienced working in direct client facing environment at client’s London office and delivering within tight deadlines.",
+      "Currently working at Trantor software Ltd. since March 2018 as Front-end web developer.",
+      "Experienced working in direct client facing environment and gathering requirements from product team.",
       "Experienced in understanding requirements from product team and estimate the required effort.",
-      "Developed the UI of data driven web apps using popular libraries like React, Angular, D3, jQuery, Bootstrap.",
+      "Developed the UI of data driven web apps using libraries like React, Angular, D3, jQuery, Bootstrap.",
       "Delivering apps with high performance, user friendly, multi device and cross browser compatible.",
-      "Interacting with 3rd party APIs and consuming RESTful APIs.",
-      "Scripted automated tests for nightly regression testing.",
-      "Architectured the unit testing environment for web apps written in Angular, jQuery or plain javascript.",
+      "Interacting with 3rd party APIs and consuming REST APIs.",
+      "Ensuring quality standards by writing unit tests and automated e2e tests for nightly regression testing.",
+      "Long term aspiration is a career as tech architecture.",
       "Always abreast with latest web technologies, frameworks, tools and news. Indulged in offline online courses to keep improving skills."
     ],
     "emailID": "ayush.sharma1505@gmail.com",
-    "mobileNumber":"+91 9340708178",
+    "mobileNumber":"+91 8989404278",
     "techStack": {
       "Angular": {
         "rating": 4,
@@ -24,7 +23,11 @@
         "new": false
       },
       "Javascript": {
-        "rating": 5,
+        "rating": 4,
+        "new": false
+      },
+      "Ionic": {
+        "rating": 3,
         "new": false
       },
       "D3.js": {
@@ -39,24 +42,24 @@
         "rating": 3,
         "new": true
       },
-      "Semantic UI": {
-        "rating": 4,
-        "new": false
-      },
       "Git, Jira": {
         "rating": 4,
         "new": false
+      },
+      "RxJs": {
+        "rating": 3,
+        "new": true
       },
       "Webpack": {
         "rating": 4,
         "new": true
       },
       "TypeScript": {
-        "rating": 3,
+        "rating": 4,
         "new": false
       },
       "jQuery": {
-        "rating": 4,
+        "rating": 3,
         "new": false
       },
       "Photoshop": {
@@ -68,7 +71,7 @@
         "new": true
       },
       "Firebase": {
-        "rating": 3,
+        "rating": 2,
         "new": true
       },
       "AWS": {
@@ -91,15 +94,21 @@
       },
       {
         "name": "Infosys Ltd.",
-        "position": "UI developer/ Test automator",
+        "position": "UI developer/ Test automation",
         "year": "Dec 2016 - Oct 2017",
         "location": "London, UK"
       },
       {
         "name": "Infosys Ltd.",
-        "position": "UI developer/ Test automator",
-        "year": "Nov 2017 - Present",
+        "position": "UI developer/ Test automation",
+        "year": "Nov 2017 - Feb 2018",
         "location": "Chennai, India"
+      },
+      {
+        "name": "Trantor Software Ltd.",
+        "position": "UI developer/ Hybrid app developer",
+        "year": "Mar 2018 - Present",
+        "location": "Chandigarh, India"
       }
     ],
     "skillSet": {

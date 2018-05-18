@@ -31,7 +31,7 @@ export default class PastExp extends React.Component {
 
 	handleNext = () => {
 		const {stepIndex} = this.state;
-		if (stepIndex < 3) {
+		if (stepIndex < exp.length - 1) {
 			this.setState({stepIndex: stepIndex + 1});
 		}
 	};
@@ -65,7 +65,7 @@ export default class PastExp extends React.Component {
 	renderStepActions(step) {
 		return (
 			<div style={{margin: '12px 0'}}>
-				{step < 3 && (
+				{step < exp.length -1 && (
 					<RaisedButton
 						label="Next"
 						disableTouchRipple={true}
