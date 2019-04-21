@@ -28,7 +28,7 @@
   },
   "author": "Ayush Sharma",
   "license": "MIT",
-  "homepage": "http://heyayush.com",
+  "homepage": "https://github.com/ayu15/create-my-cv",
   "devDependencies": {
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.0.2",
