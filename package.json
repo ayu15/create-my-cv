@@ -12,13 +12,13 @@
     "react-tooltip": "^3.3.0"
   },
   "scripts": {
-    "predeploy": "yarn build",
-    "deploy": "rimraf docs && rename build docs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-    "watch-css": "yarn run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "yarn build-css && react-scripts build",
+    "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -28,8 +28,9 @@
   },
   "author": "Ayush Sharma",
   "license": "MIT",
-  "homepage": "https://github.com/ayu15/create-my-cv",
+  "homepage": "https://ayu15.github.io/create-my-cv",
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1"
